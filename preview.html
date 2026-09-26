@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>弹幕效果对比预览｜一线 · 同心</title>
+    <style>
+      /* 只用于这一页的排版，效果本身的样式都在 src/index.css 里 */
+      :root { --pv-bg: #f7f3ec; --pv-ink: #3a342c; --pv-line: #e2d9ca; }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0; background: var(--pv-bg); color: var(--pv-ink);
+        font: 15px/1.7 system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+      }
+      .pv { max-width: 860px; margin: 0 auto; padding: 32px 18px 56px; }
+      .pv__head h1 { margin: 0 0 6px; font-size: 24px; letter-spacing: .04em; }
+      .pv__head p { margin: 0 0 24px; color: #6d6459; }
+      .pv__head b { color: var(--pv-ink); }
+      .pv__grid {
+        display: grid; gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      }
+      .pv__card {
+        display: flex; flex-direction: column; gap: 4px; align-items: flex-start;
+        padding: 16px 16px 14px; border: 1px solid var(--pv-line); border-radius: 14px;
+        background: #fff; cursor: pointer; text-align: left; font: inherit;
+        transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+      }
+      .pv__card:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(58,52,44,.10); }
+      .pv__card.on { border-color: #c9a227; box-shadow: 0 0 0 2px #c9a22733; }
+      .pv__name { font-size: 17px; font-weight: 600; }
+      .pv__desc { color: #6d6459; font-size: 13px; }
+      .pv__id { margin-top: 2px; font-size: 11px; color: #a09789; letter-spacing: .06em; }
+      .pv__tip { margin-top: 22px; color: #8a8175; font-size: 13px; }
+    </style>
+    <script type="module" crossorigin src="./assets/preview-PnTaoOFE.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/effects-CoqJs-8D.js">
+    <link rel="stylesheet" crossorigin href="./assets/effects-B-CiVXpl.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
