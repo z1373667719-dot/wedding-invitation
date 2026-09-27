@@ -1,1 +1,6 @@
-# wedding-invitation
+# 婚礼请柬 · 一线同心
+
+钟涛 & 张梦雅 · 2027 年 1 月 1 日 · 合肥肥东东宫国际大酒店
+
+静态站点构建产物，源码见主题 `themes/tongxin`。
+旧的 Vue 版产物已归档在 `archive-vue/`，不再更新。
